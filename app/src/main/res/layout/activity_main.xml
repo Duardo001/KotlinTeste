@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3299CC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:text="Cadastro de Praias"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etNomePraia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome da Praia"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/etCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/etEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnIncluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:background="#236B8E"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPraias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonVerIntegrantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="Integrantes"
+        android:background="#236B8E"
+        />
+
+</LinearLayout>
